@@ -4,57 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <style>
-
-@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+<style>
 
 body{
+    position : absolute;
     text-align: center;
     background-color: #191919;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
+header {
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+}
 .full-table {
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
 .box {
-    padding: 10px 25px 10px 25px;
+    padding: 10px 100px;
     border-radius: 5px;
     background: #90CAF9;
     color: #fff;
     display: inline-block;
-    width: 180px;
-    height: 220px;
 }
 
 .date {
     display: block;
     text-align: center;
-    font-family: 'FAMILY_NAME', sans-serif;
     font-size: 10em;
+    padding: 0px 0px;
 }
 
-    </style>
+</style>
+
 </head>
 <body>
 
 <div class="full-table">
-  <div class="table-cell">
     <div class="box">
-        <br>
-        Today
+        
+        <header><strong>Today</strong></header>
         <div class="date" id="date"></div>
     </div>
-  </div>
 </div>
 
 <script>
